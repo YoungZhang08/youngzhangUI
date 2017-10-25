@@ -1,29 +1,25 @@
 <template>
   <div class="index">
-    <div class="iHeader">
-      <img src="../assets/images/UI.png" alt="" width="100px" height="100px">
-      <h1>Welcome to YoungZhang UI!</h1>
-    </div>
-    <div class="leftNav">
-      <div class="layout">布局</div>
-      <div class="nav">导航栏</div>
-      <div class="goTop">返回顶部</div>
-      <div class="selec">select选择框</div>
-      <div class="popUp">弹窗</div>
-      <div class="slide">滑块</div>
-    </div>
+    <iHeader class="iheader"></iHeader>  
+    <leftNav class="leftNav"></leftNav>
     <div class="contentWrap"> 
       <router-view></router-view>
-    </div>
-    
+    </div>  
   </div>
 </template>
 
 <script>
 
+import iHeader from './public/iHeader.vue';
+import leftNav from './public/leftNav.vue';
+// import content from '../components/content.vue';
+
 export default {
   name: 'index',
-  
+  components: {
+    iHeader: iHeader,
+    leftNav: leftNav,
+  }
 }
 </script>
 
@@ -43,17 +39,24 @@ export default {
       height: 120px;
       background-color: #fff;
       z-index: 999;
-      img{
-        width: 8%;
-        height: 100px;
-        position: absolute;
-        left: 0;
-        top: 0;
+      /* .uiImg{
+        float: left;
+        width: 10%;
+        height: 120px;
+        img{
+          width: 100%;
+          height: 120px;
+        }
       }
-      h1{
-        color: #A1ACF1;
+      .welcome{
+        float: left;
+        width: 400px;
+        height: 30px; 
         margin-top: 40px;
-      }
+        h1{
+          color: #A1ACF1;
+        }
+      } */
     }
     .leftNav{
       position: absolute;
@@ -63,15 +66,16 @@ export default {
       height: 950px;
       color: #A1ACF1;
       background-color: #fff;
-      div{
+      /* div{
         width: 100%;
         height: 40px;
         font-size: 16px;
         line-height: 40px;
-      }
+      } */
     }
     .contentWrap{
       position: absolute;
+      /* overflow: hidden; */
       left: 10%;
       top:120px;
       width:90%;
