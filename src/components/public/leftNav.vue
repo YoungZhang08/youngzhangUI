@@ -1,16 +1,27 @@
 <template>
   <div class="navigation">
-    <div class="layout">布局</div>
-    <div class="nav">导航栏</div>
-    <div class="goTop">返回顶部</div>
-    <div class="selec">select选择框</div>
-    <div class="popUp">弹窗</div>
-    <div class="slide">滑块</div>
+    <div class="navDiv">
+      <router-link to="layout">布局</router-link>
+    </div>
+    <div class="navDiv">
+      <router-link to="navGuard">导航栏</router-link>
+    </div>
+    <div class="navDiv">
+      <router-link to="goTop">返回顶部</router-link>
+    </div>
+    <div class="navDiv">
+      <router-link to="select">select选择框</router-link>
+    </div>
+    <div class="navDiv">
+      <router-link to="popUp">弹窗</router-link>
+    </div>
+    <div class="navDiv">
+      <router-link to="slide">轮播图</router-link>
+    </div>
   </div>
 </template>
 
 <script>
-  // import iHeader from './iHeader.vue';
  
   export default{
     name: 'leftNav',
@@ -19,7 +30,6 @@
       }
     },
     methods:{
-
     }
   }
 
@@ -34,6 +44,18 @@
       height: 40px;
       font-size: 16px;
       line-height: 40px;
+      color: #A1ACF1;
+      background-color: white;
+    }
+    div:hover{
+      background-color: #A1ACF1;
+    }
+    div:hover a{
+      color: white;
+    }
+    a{
+      color: #A1ACF1;
+      text-decoration-line: none;
     }
   }
 </style>

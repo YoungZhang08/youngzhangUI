@@ -12,13 +12,20 @@
 
 import iHeader from './public/iHeader.vue';
 import leftNav from './public/leftNav.vue';
-// import content from '../components/content.vue';
 
 export default {
   name: 'index',
   components: {
     iHeader: iHeader,
     leftNav: leftNav,
+  },
+  data(){
+    return {
+
+    }
+  },
+  render(){
+    
   }
 }
 </script>
@@ -39,24 +46,6 @@ export default {
       height: 120px;
       background-color: #fff;
       z-index: 999;
-      /* .uiImg{
-        float: left;
-        width: 10%;
-        height: 120px;
-        img{
-          width: 100%;
-          height: 120px;
-        }
-      }
-      .welcome{
-        float: left;
-        width: 400px;
-        height: 30px; 
-        margin-top: 40px;
-        h1{
-          color: #A1ACF1;
-        }
-      } */
     }
     .leftNav{
       position: absolute;
@@ -66,16 +55,9 @@ export default {
       height: 950px;
       color: #A1ACF1;
       background-color: #fff;
-      /* div{
-        width: 100%;
-        height: 40px;
-        font-size: 16px;
-        line-height: 40px;
-      } */
     }
     .contentWrap{
       position: absolute;
-      /* overflow: hidden; */
       left: 10%;
       top:120px;
       width:90%;
