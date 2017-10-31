@@ -1,9 +1,7 @@
 <template>
   
   <div class="layout">
-    <div id="layout_1">
-      <!-- <router-view></router-view> -->
-    </div>
+    <div id="layout_1"></div>
     <div id="layout_2"></div>
     <div id="layout_3"></div>
   </div>
@@ -14,15 +12,10 @@
   
   export default{
     name: 'layout',
-    components:{
-    },
     data(){
       return {
-        
+        msg: 'hihihihih'
       }
-    },
-    render(){
-
     }
   }
 

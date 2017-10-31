@@ -12,20 +12,14 @@
 
 import iHeader from './public/iHeader.vue';
 import leftNav from './public/leftNav.vue';
+import layout from './layout/layout.vue';
 
 export default {
   name: 'index',
   components: {
     iHeader: iHeader,
     leftNav: leftNav,
-  },
-  data(){
-    return {
-
-    }
-  },
-  render(){
-    
+    layout: layout
   }
 }
 </script>
