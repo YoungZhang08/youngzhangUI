@@ -13,13 +13,23 @@
 import iHeader from './public/iHeader.vue';
 import leftNav from './public/leftNav.vue';
 import layout from './layout/layout.vue';
+import navGuard from './navGuard/navGuard.vue';
+import popUp from './popUp/popUp.vue';
+import selFrame from './selFrame/selFrame.vue';
+import slide from './slide/slide.vue';
+import goTop from './goTop/goTop.vue';
 
 export default {
   name: 'index',
   components: {
     iHeader: iHeader,
     leftNav: leftNav,
-    layout: layout
+    layout: layout,
+    navGuard: navGuard,
+    popUp: popUp,
+    selFrame: selFrame,
+    slide: slide,
+    goTop: goTop
   }
 }
 </script>

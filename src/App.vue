@@ -6,7 +6,7 @@
 
 <script>
 
-import index from './components/index.vue'
+import index from './components/index.vue';
 
 export default {
   name: 'app',

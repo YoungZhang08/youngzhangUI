@@ -10,7 +10,7 @@
       <router-link to="goTop">返回顶部</router-link>
     </div>
     <div class="navDiv">
-      <router-link to="select">select选择框</router-link>
+      <router-link to="selFrame">select选择框</router-link>
     </div>
     <div class="navDiv">
       <router-link to="popUp">弹窗</router-link>
